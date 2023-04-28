@@ -47,6 +47,24 @@
 }
 
 /* Portofolio Start */
+
+#Navbarp {
+  background: #002278;
+  height: 50px;
+  z-index: 99;
+}
+
+#Navbarp a {
+  text-transform: uppercase;
+}
+
+#Navbarp a:hover {
+  background-color: #ff5c00;
+  transition: 0.5s ease-in-out;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
 #midle_box {
   width: 1440px;
   height: 1128px;
