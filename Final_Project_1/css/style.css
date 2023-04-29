@@ -48,9 +48,6 @@
 }
 
 #fyi{
-    display: flex;
-    align-items: center;
-    justify-content: center;
     height: 575px;
     background: url(../assets/img/mufid-majnun-ji0wcfoW7Zc-unsplash.jpg);
     background-size: cover;
