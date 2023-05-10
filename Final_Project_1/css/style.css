@@ -43,6 +43,11 @@
   background-color: #ff5c00;
   border-radius: 20px;
 }
+.c-navbar.active{
+  padding: 0 10px 0 10px;
+  background-color: #ff5c00;
+  border-radius: 20px;
+}
 /* End Style Navbar */
 
 #hero {

@@ -12,7 +12,7 @@ function popup_close(x) {
     popup.classList.add('hidden');
 }
 
-function kirim_contact() {
+function kirim_contact(x) {
     let nama_lengkap = document.getElementById('nama_lengkap').value;
     let email = document.getElementById('email').value;
     let deskripsi = document.getElementById('deskripsi').value;
@@ -23,4 +23,5 @@ function kirim_contact() {
     };
 
     localStorage.setItem('contact', JSON.stringify(data));
+    popup_close(x);
 }
