@@ -13,17 +13,34 @@
 </head>
 <body>
     
-    <section id="navbar">
+    <section id="navbar" class="p-0 m-0">
         <!-- HALAMAN SECTION NAVBAR -->
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="nav nav-bg-dark">
-
-                    </div>
-                </div>
+        <nav class="navbar navbar-expand-lg bg-light py-5">
+            <div class="container">
+              <a class="btn btn-primary rounded-circle p-3" href="#"><img src="assets/icon/bar.png" alt="Barbar"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" style="margin-right: -180px;" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Product</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                  </li>
+                </ul>
+              </div>
+            <a class="btn btn-outline-primary rounded-pill px-4 mx-2">Login</a>
+            <a class="btn btn-primary rounded-pill px-4 mx-2">Sign Up</a>
             </div>
-        </div>
+        </nav>
     </section>
 
     <section id="header">
@@ -31,7 +48,93 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    
+                    <div class="kotak d-flex align-items-center flex-row">
+                        <div class="kotak-kiri" style="color: #234CAD;width: 400px;">
+                            <h1>Business Communications Reinvented</h1>
+                            <p>Start communicating with your business team more efficiently with our app.</p>
+                            <a href="#" class="btn btn-outline-primary rounded-pill px-4 py-2">Get the app</a>
+                        </div>
+                        <div class="kotak-kanan ms-5">
+                            <div class="status" style="color: #234CAD;">
+                                <div class="list-status">
+                                    <div class="dokumen bg-white rounded p-3 d-inline-block">
+                                        <img src="assets/icon/dokumen.png" alt="dokumen">
+                                    </div>
+                                </div>
+                                <div class="list-status d-flex align-items-end">
+                                    <div class="cloud bg-white rounded p-3 d-inline-flex align-items-center flex-row">
+                                        <div class="bg-custom rounded-circle p-2 d-inline-block">
+                                            <img src="assets/icon/cloud.png" alt="cloud">
+                                        </div>
+                                        <div class="d-flex flex-column ms-3">
+                                            <span style="font-weight: 700;font-size: 16px;line-height: 21px;">Uploading Document</span>
+                                            <span style="font-weight: 400;font-size: 12px;line-height: 21px;">7,09/ 108,98 GB</span>
+                                        </div>
+                                    </div>
+                                    <div class="cloud bg-white rounded p-3 d-inline-flex align-items-center justify-content-center flex-column ms-5">
+                                        <div class="bg-custom rounded-circle p-2 d-inline-block">
+                                            <img src="assets/icon/cloud.png" alt="cloud">
+                                        </div>
+                                        <div class="text-center mt-2">
+                                            <span style="font-weight: 400;font-size: 12px;line-height: 21px;">7,09/ 108,98 GB</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="list-status mt-3">
+                                    <div class="calendar bg-white rounded p-3 d-inline-flex flex-column">
+                                        <div class="d-flex flex-row align-items-center">
+                                            <img src="assets/icon/calendar.png" alt="calendar">
+                                            <div class="d-flex flex-column ms-3">
+                                                <span style="font-weight: 700;font-size: 16px;line-height: 21px;">Team Meeting</span>
+                                                <span style="font-weight: 400;font-size: 12px;line-height: 21px;">2:30 PM 15 Apr 2020</span>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex flex-row mt-2">
+                                            <img src="assets/icon/Person.png" alt="profile">
+                                            <img src="assets/icon/Person-1.png" alt="profile" style="margin-left: -10px;">
+                                            <img src="assets/icon/Person-2.png" alt="profile" style="margin-left: -10px;">
+                                            <img src="assets/icon/Other People.png" alt="profile" style="margin-left: -10px;">
+                                        </div>
+                                    </div>
+                                    <div class="user-book bg-white rounded p-3 d-inline-flex align-items-center flex-row ms-3">
+                                            <img src="assets/icon/user-book.png" alt="user-book" width="60">
+
+                                        <div class="d-flex flex-column ms-3 position-relative">
+                                            <span style="font-weight: 700;font-size: 16px;line-height: 21px;">Anna Brooks</span>
+                                            <span style="font-weight: 400;font-size: 12px;line-height: 21px;">Hi, how are you doing today?</span>
+                                            <span class="position-absolute" style="top: 0px; right: 0;font-weight: 400;font-size: 10px;line-height: 13px;">2:09 PM</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="list-status d-flex align-items-start">
+                                    <div class="user-book2 bg-white rounded p-3 d-inline-flex align-items-center flex-row mt-4">
+                                        <img src="assets/icon/user-book2.png" alt="user-book2" width="60">
+
+                                        <div class="d-flex flex-column ms-3 position-relative">
+                                            <span style="font-weight: 700;font-size: 16px;line-height: 21px;">John Smith</span>
+                                            <span style="font-weight: 400;font-size: 12px;line-height: 21px;">Hello, are you available for a pro…</span>
+                                            <span class="position-absolute" style="top: 0px; right: 0;font-weight: 400;font-size: 10px;line-height: 13px;">11:02 AM</span>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex flex-column ms-3 position-relative">
+                                        <div class="simpan bg-white rounded p-3 d-inline-flex align-items-center flex-row ms-5">
+                                            <div class="bg-custom rounded-circle p-2 d-inline-block">
+                                                <img src="assets/icon/simpan.png" alt="simpan">
+                                            </div>
+                                            <div class="d-flex flex-column ms-3">
+                                                <span style="font-weight: 700;font-size: 16px;line-height: 21px;">Message Saved</span>
+                                                <span style="font-weight: 400;font-size: 12px;line-height: 21px;">You have successfully saved this message</span>
+                                            </div>
+                                        </div>
+                                        <div class="message bg-white rounded p-3 d-inline-block mt-3" style="width: 65px;">
+                                            <img src="assets/icon/message.png" alt="message">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
                 </div>
             </div>
         </div>
