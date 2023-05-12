@@ -6,15 +6,156 @@
 
 /* STYLING DIBAWAH */
 
-#navbar{
-    
+#navbar .kotak {
+  width: 100%;
+  height: 30px;
 }
 
-#navbar .kotak{
-    width: 100%;
-    height: 30px;
+/* Style about start */
+#about .btn-maba {
+  width: 200px;
+  height: 50px;
+  background: #ffffff;
+  border-radius: 30px;
+  color: #234cad;
+  transition: box-shadow 0.5 ease;
+}
+#about .btn-maba:hover {
+  background: #234cad;
+  color: #ffffff;
+  box-shadow: 1px 1px 10px -5px black;
+}
+#about .btn.outline {
+  border: 1px solid #234cad;
 }
 
-#header{
-    
+#about .card {
+  margin-top: 10px;
+  height: 160px;
+  width: 276px;
+  border-radius: 25px;
 }
+
+#about #box_kiri {
+  background: #f2f6ff;
+  border-radius: 60px;
+}
+
+#about #box_kanan {
+  margin-top: 100px;
+}
+
+#about .icon {
+  margin-top: 10px;
+  justify-content: center;
+  height: 40px;
+  width: 40px;
+  border-radius: 60px;
+  border: 2px solid #234cad;
+}
+
+#about h1 {
+  color: #234cad;
+  left: 0%;
+  right: 64.9%;
+  top: 18.78%;
+  bottom: 52%;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 56px;
+}
+
+#about p {
+  color: #234cad;
+  left: 0%;
+  right: 70.77%;
+  top: 52.35%;
+  bottom: 38.61%;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+}
+/* Style About End */
+
+/* Style Pricing Start */
+#pricing .btn-maba {
+  width: 200px;
+  height: 65px;
+  background: #ffffff;
+  border-radius: 30px;
+  color: #234cad;
+  transition: box-shadow 0.5 ease;
+}
+#pricing .btn-maba:hover {
+  background: #234cad;
+  color: #ffffff;
+  box-shadow: 1px 1px 10px -5px black;
+}
+#pricing .btn.outline {
+  border: 1px solid #234cad;
+}
+
+#pricing .box {
+  padding: 80px;
+  width: 380px;
+  height: 380px;
+  background: #f2f6ff;
+  border-radius: 60px;
+  color: #234cad;
+  transition: box-shadow 0.5 ease;
+}
+
+#pricing .box:hover {
+  background: #ffffff;
+  box-shadow: 1px 1px 10px -5px black;
+}
+
+#pricing .box.outline:hover {
+  border: 3px solid #234cad;
+}
+
+#pricing h1 {
+  color: #234cad;
+  height: 48px;
+  left: 31.75%;
+  right: 31.39%;
+  top: calc(50% - 48px / 2 - 41px);
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 48px;
+  text-align: center;
+}
+
+#pricing h5 {
+  height: 40px;
+  left: 31.75%;
+  right: 31.39%;
+  top: calc(50% - 40px / 2 - 120px);
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 40px;
+  text-align: center;
+}
+
+#pricing p {
+  color: #234cad;
+  height: 32px;
+  left: 33.58%;
+  right: 32.48%;
+  top: calc(50% - 32px / 2 + 14px);
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  text-align: center;
+}
+/* Style Pricing End */
