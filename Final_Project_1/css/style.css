@@ -195,16 +195,62 @@ ul {
 }
 
 .projectList {
+  border-radius: 10px;
   text-align: center;
   background-color: #002278;
   color: #eeeeee;
-  margin-top: 5px;
+  margin-top: 2%;
+  height: 350px;
 }
 
 .projectList ul {
-  padding: 0;
+  padding: 3%;
   margin: 0;
 }
+
+.projectList p{
+  font-size: 125%;
+  padding-top: 10px;
+}
+
+.projectList li{
+  padding-top: 30px;
+}
+
+/*  */
+.projectList-1 {
+  border-radius: 10px;
+  text-align: center;
+  background-color: #002278;
+  color: #eeeeee;
+  margin-top: 2%;
+  height: 600px;
+}
+
+.projectList-1 ul {
+  padding: 3%;
+  margin: 0;
+}
+
+.projectList-1 p{
+  font-size: 125%;
+  padding-top: 10px;
+}
+
+.projectList-1 li{
+  padding-top: 30px;
+}
+
+.popularDiv {
+  margin-top: 20px;
+  padding-top:3%;
+  border-radius: 20px;
+}
+
+.popularDiv ul li img{
+  height: 200px;
+}
+
 
 #blogList {
   width: 50%;
@@ -237,8 +283,22 @@ button a {
   text-decoration: none;
   color: #eeeeee;
 }
+
 /* Blog End Heri */
 
+
+/* Style Navbar */
+
+.c-navbar {
+  padding: 0 10px 0 10px;
+}
+
+.c-navbar:hover {
+  padding: 0 10px 0 10px;
+  background-color: #ff5c00;
+  border-radius: 20px;
+}
+/* End Style Navbar */
 
 /* Style h-section */
 .h-section {
