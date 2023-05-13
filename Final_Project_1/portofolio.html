@@ -9,26 +9,35 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <!-- Bagian Navigasi -->
-    <div id="Navbarp" class="w-100">
-      <nav class="navbar navbar-expand-lg navbar-dark text-white">
-        <div class="container">
-          <b>LOGO</b>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav ms-auto">
-              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-              <a class="nav-link" href="#">Contact Us</a>
-              <a class="nav-link" href="AboutUs.html">About Us</a>
-              <a class="nav-link" href="">Portfolio</a>
-              <a class="nav-link" href="#">Blog</a>
-            </div>
-          </div>
+    <!-- Navigasi -->
+    <nav class="navbar navbar-expand-lg" style="background-color: #002278">
+      <div class="container-fluid">
+        <a class="navbar-brand text-light" style="padding-left: 10%" href="#">LOGO</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav" style="padding-right: 5%">
+          <ul class="navbar-nav">
+            <li class="c-navbar nav-item">
+              <a class="nav-link text-light" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="c-navbar nav-item">
+              <a class="nav-link text-light" href="contactus.html">Contact Us</a>
+            </li>
+            <li class="c-navbar nav-item">
+              <a class="nav-link text-light" href="AboutUs.html">About Us</a>
+            </li>
+            <li class="c-navbar nav-item active">
+              <a class="nav-link text-light" href="">Portofolio</a>
+            </li>
+            <li class="c-navbar nav-item">
+              <a class="nav-link text-light" href="blog.html">Blog</a>
+            </li>
+          </ul>
         </div>
-      </nav>
-    </div>
+      </div>
+    </nav>
+    <!-- End Navigasi -->
 
     <div class="ps-5 pt-5">
       <h1>Portofolio</h1>
@@ -42,60 +51,57 @@
     <div id="midle_box" class="container text-center w-auto p-3">
       <h1>Portofolio</h1>
       <p>Lorem ipsum dolor sit amet consectetur,</p>
-      <button id="btn" type="button" class="btn btn-outline-warning">All</button>
-      <button type="button" class="btn btn-outline-dark">Office Small</button>
-      <button type="button" class="btn btn-outline-dark">Office Medium</button>
-      <button type="button" class="btn btn-outline-dark">Office Large</button>
+      <button type="button" class="btn btn-outline-dark all active">All</button>
+      <button type="button" class="btn btn-outline-dark office_small">Office Small</button>
+      <button type="button" class="btn btn-outline-dark office_medium">Office Medium</button>
+      <button type="button" class="btn btn-outline-dark office_large">Office Large</button>
 
       <!-- Card 1-4 Start -->
       <div class="row mt-4">
-        <div class="card col ms-3" style="width: 18rem">
+        <div class="card col-md-4 mx-2 office_small" style="width: 18rem">
           <img src="assets/imgP/gambar1.jpeg" class="card-img-top" alt="..." />
           <div class="card-body">
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
           </div>
         </div>
-        <div class="card col ms-3" style="width: 18rem">
+        <div class="card col-md-4 mx-2 office_medium" style="width: 18rem">
           <img src="assets/imgP/gambar2.jpg" class="card-img-top" alt="..." />
           <div class="card-body">
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
           </div>
         </div>
-        <div class="card col ms-3" style="width: 18rem">
+        <div class="card col-md-4 mx-2 office_medium" style="width: 18rem">
           <img src="assets/imgP/gambar3.jpg" class="card-img-top" alt="..." />
           <div class="card-body">
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
           </div>
         </div>
-        <div class="card col ms-3" style="width: 18rem">
+        <div class="card col-md-4 mx-2 office_small" style="width: 18rem">
           <img src="assets/imgP/gambar4.jpg" class="card-img-top" alt="..." />
           <div class="card-body">
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
           </div>
         </div>
-      </div>
-      <!-- Card 1-4 End -->
-      <!-- Card 5-8 Start -->
-      <div class="row mt-3">
-        <div class="card col ms-3" style="width: 18rem">
+
+        <div class="card col-md-4 ms-3 office_small" style="width: 18rem">
           <img src="assets/imgP/gambar5.jpg" class="card-img-top" alt="..." />
           <div class="card-body">
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
           </div>
         </div>
-        <div class="card col ms-3" style="width: 18rem">
+        <div class="card col-md-4 ms-3 office_medium" style="width: 18rem">
           <img src="assets/imgP/gambar6.jpg" class="card-img-top" alt="..." />
           <div class="card-body">
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
           </div>
         </div>
-        <div class="card col ms-3" style="width: 18rem">
+        <div class="card col-md-4 ms-3 office_large" style="width: 18rem">
           <img src="assets/imgP/gambar7.jpeg" class="card-img-top" alt="..." />
           <div class="card-body">
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
           </div>
         </div>
-        <div class="card col ms-3" style="width: 18rem">
+        <div class="card col-md-4 ms-3 office_large" style="width: 18rem">
           <img src="assets/imgP/gambar8.jpg" class="card-img-top" alt="..." />
           <div class="card-body">
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -114,5 +120,56 @@
     <div id="footer" class="container text-center p-4 w-auto p-3">Copyright 2023 | Apa aja bebas</div>
     <!-- Script -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+  
+    <script>
+      const allBtn = document.querySelector(".all");
+      const smallBtn = document.querySelector(".office_small");
+      const mediumBtn = document.querySelector(".office_medium");
+      const largeBtn = document.querySelector(".office_large");
+      const button = document.querySelectorAll('button');
+
+      allBtn.addEventListener("click", () => {
+        // Hapus class active
+        button.forEach(btn => btn.classList.remove('active'));
+        // Tambahkan class active pada button yang diklik
+        allBtn.classList.add('active');
+        toggleCards("all");
+      });
+      smallBtn.addEventListener("click", () => {
+        // Hapus class active
+        button.forEach(btn => btn.classList.remove('active'));
+        // Tambahkan class active pada button yang diklik
+        smallBtn.classList.add('active');
+        toggleCards("office_small");
+      });
+
+      mediumBtn.addEventListener("click", () => {
+        // Hapus class active
+        button.forEach(btn => btn.classList.remove('active'));
+        // Tambahkan class active pada button yang diklik
+        mediumBtn.classList.add('active');
+        toggleCards("office_medium");
+      });
+
+      largeBtn.addEventListener("click", () => {
+        // Hapus class active
+        button.forEach(btn => btn.classList.remove('active'));
+        // Tambahkan class active pada button yang diklik
+        largeBtn.classList.add('active');
+        toggleCards("office_large");
+      });
+
+      function toggleCards(category) {
+        const cards = document.querySelectorAll(".card");
+        console.log(cards);
+        cards.forEach((card) => {
+          if (category === "all" || card.classList.contains(category)) {
+            card.classList.remove("d-none");
+          } else {
+            card.classList.add("d-none");
+          }
+        });
+      }
+    </script>
   </body>
 </html>

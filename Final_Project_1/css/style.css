@@ -22,11 +22,33 @@
   border: 1px solid #ff5c00;
 }
 
+.hidden{
+  display: none !important;
+}
+
 #navbar {
   background: linear-gradient(180deg, rgba(255, 92, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%);
   height: 90px;
   z-index: 99;
 }
+
+/* Style Navbar */
+/* Navbar selain home */
+.c-navbar {
+  padding: 0 10px 0 10px;
+}
+
+.c-navbar:hover {
+  padding: 0 10px 0 10px;
+  background-color: #ff5c00;
+  border-radius: 20px;
+}
+.c-navbar.active{
+  padding: 0 10px 0 10px;
+  background-color: #ff5c00;
+  border-radius: 20px;
+}
+/* End Style Navbar */
 
 #hero {
   background: url("../assets/img/fikri-nasution-Zx1hXtkNUzc-unsplash.jpg");
@@ -47,45 +69,45 @@
   background-color: rgba(0, 0, 0, 0.5); /* warna overlay */
 }
 
-#fyi{
-    height: 575px;
-    background: url(../assets/img/mufid-majnun-ji0wcfoW7Zc-unsplash.jpg);
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
+.popup-contact{
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999;
 }
-#fyi::before{
-    content: '';
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 575px;
-    background-color: rgba(255, 92, 0, 0.6); /* warna overlay */
+.popup-contact .container{
+  position: relative;
+  width: 600px !important;
+  border-radius: 20px;
 }
-
-/* Portofolio Start */
-#Navbarp {
-  background: #002278;
-  height: 50px;
-  z-index: 99;
-}
-
-#Navbarp a {
-  text-transform: uppercase;
-}
-
-#Navbarp a:hover {
-  background-color: #ff5c00;
-  transition: 0.5s ease-in-out;
-  border-radius: 10px;
+.popup-contact .close{
+  position: absolute;
+  width: auto;
+  right: 5px;
+  top: 5px;
   cursor: pointer;
 }
 
-li a {
-  text-decoration: none;
-  color: black;
+#fyi {
+  height: 575px;
+  background: url(../assets/img/mufid-majnun-ji0wcfoW7Zc-unsplash.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+#fyi::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 575px;
+  background-color: rgba(255, 92, 0, 0.6); /* warna overlay */
 }
 
+/* Portfolio */
 #midle_box {
   width: 1440px;
   height: 1128px;
@@ -152,3 +174,157 @@ li a {
 .flickity-page-dots .dot.is-selected {
   background-color: #ff5c00;
 }
+
+/* Blog Start Heri */
+
+#blogdesc1 {
+  background-color: #ff5c00;
+  color: #eeeeee;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.commentDesc a {
+  text-decoration: none;
+  color: #f5f5f5;
+  font-size: 0.8125em;
+}
+
+.projectList {
+  text-align: center;
+  background-color: #002278;
+  color: #eeeeee;
+  margin-top: 5px;
+}
+
+.projectList ul {
+  padding: 0;
+  margin: 0;
+}
+
+#blogList {
+  width: 50%;
+  float: left;
+}
+
+li p a {
+  padding: 0;
+  color: #f5f5f5;
+  font-size: 0.8125em;
+  text-transform: uppercase;
+}
+
+span .link a {
+  color: #ffffff;
+  margin-right: 10px;
+  text-decoration: none;
+}
+
+#btn_tag {
+  text-decoration: none;
+  color: #f5f5f5;
+}
+
+#pagination li a {
+  color: black;
+}
+
+button a {
+  text-decoration: none;
+  color: #eeeeee;
+}
+/* Blog End Heri */
+
+
+/* Style h-section */
+.h-section {
+  background-color: #f5f5f5;
+  height: 248px;
+  width: 100%;
+}
+
+.h-section h3 {
+  padding-left: 10%;
+  padding-top: 100px;
+}
+
+.h-section p {
+  padding-left: 10%;
+}
+
+.h-section b {
+  color: #ff5c00;
+}
+/* End Style h-section  */
+
+.aboutimg img {
+  padding: 5%;
+}
+.button-1 {
+  padding-top: 5%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.button-1 button {
+  background-color: #f5f5f5;
+  font-size: 13px;
+  background: #f5f5f5;
+  box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+}
+.button-1 img {
+  padding-right: 10px;
+}
+
+/* End Style h-section */
+
+/*  Css Section 2*/
+.section-2 {
+  background-color: #002278;
+}
+.section-2 h2 {
+  color: white;
+  padding-left: 15%;
+}
+.section-2 h4 {
+  color: white;
+  padding-left: 15%;
+}
+
+.OurTeam {
+  padding-top: 5%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.OurTeam h5 {
+  text-align: center;
+}
+
+.OurTeam p {
+  color: black;
+  text-align: center;
+}
+/*End Css Section 2 */
+/* Css Section 3 */
+
+.section-3 {
+  color: white;
+  padding-top: 15%;
+  text-align: center;
+  background-color: #002278;
+}
+.section-3 img {
+  width: 35%;
+  padding-top: 2%;
+  padding-bottom: 5%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* End Css Section 3 */
