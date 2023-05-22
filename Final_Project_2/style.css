@@ -43,6 +43,17 @@
 }
 /* END */
 
+/* Feature */
+#feature2 .kotak-feature{
+  background: #F2F6FF;
+  border-radius: 60px;
+  padding: 100px;
+}
+#feature2 .desk-feature{
+  padding: 100px;
+}
+/* End Feature */
+
 /* Style about start */
 #about .btn-maba {
   width: 200px;
