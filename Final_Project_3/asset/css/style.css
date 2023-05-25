@@ -1,25 +1,24 @@
-@import url('https://fonts.googleapis.com/css2?family=Basic&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Basic&display=swap");
 
-*{
-    font-family: 'Basic', sans-serif;
+* {
+  font-family: "Basic", sans-serif;
 }
 
-html, body{
-    margin: 0;
-    padding: 0;
+html,
+body {
+  margin: 0;
+  padding: 0;
 }
-hr{
-    width: 100px;  
-    border: 2px solid #E73587;
+hr {
+  width: 100px;
+  border: 2px solid #e73587;
 }
-.btn.btn-custom{
-    padding: 10px 30px;
+.btn.btn-custom {
+  padding: 10px 30px;
 
-    color: white;
-    background: linear-gradient(270deg, #8C32F0 0%, #E73587 100%);
+  color: white;
+  background: linear-gradient(270deg, #8c32f0 0%, #e73587 100%);
 }
-
-
 
 /* Section A */
 
@@ -138,61 +137,59 @@ margin-bottom: 40px;
 }
 
 /* Section B */
-#aboutus{
-    position: relative;
+#aboutus {
+  position: relative;
 }
-#aboutus .title{
-    padding: 60px 160px;
-    text-align: center;
+#aboutus .title {
+  padding: 60px 160px;
+  text-align: center;
 }
-#aboutus .bola{
-    width: 276px;
-    height: 276px;
-    background: #F0F3FA;
+#aboutus .bola {
+  width: 276px;
+  height: 276px;
+  background: #f0f3fa;
 
-    left: -128px;
+  left: -128px;
 }
 
-#ovs{
-    padding: 60px 0;
+#ovs {
+  padding: 60px 0;
 }
-#ovs .list-card{
-    width: 377px;
+#ovs .list-card {
+  width: 377px;
 }
 /* Custom Flickity */
-.flickity-button:disabled{
-    opacity: 0;
-    transition: all 0.5s;
+.flickity-button:disabled {
+  opacity: 0;
+  transition: all 0.5s;
 }
 .flickity-prev-next-button {
-    width: 76px;
-    height: 76px;
-    background: linear-gradient(270deg, #8C32F0 0%, #E73587 100%);
-    border: 2px solid #FFFFFF;  
+  width: 76px;
+  height: 76px;
+  background: linear-gradient(270deg, #8c32f0 0%, #e73587 100%);
+  border: 2px solid #ffffff;
 }
 .flickity-prev-next-button:hover {
-    background: linear-gradient(270deg, #E73587 0%, #8C32F0 100%);
+  background: linear-gradient(270deg, #e73587 0%, #8c32f0 100%);
 }
 /* arrow color */
 .flickity-prev-next-button .arrow {
-    fill: white;
+  fill: white;
 }
 .flickity-prev-next-button.no-svg {
-    color: white;
+  color: white;
 }
 /* position outside */
 .flickity-prev-next-button.previous {
-    left: -40px;
+  left: -40px;
 }
 .flickity-prev-next-button.next {
-    right: -40px;
+  right: -40px;
 }
 
-
-
-
 /* Section C */
-
-
+#ourwork .btn {
+  background: linear-gradient(270deg, #8c32f0 0%, #e73587 100%);
+}
 
 /* Section D */
