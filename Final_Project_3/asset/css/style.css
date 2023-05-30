@@ -79,3 +79,23 @@ hr {
 }
 
 /* Section D */
+#contact .text-left {
+  margin-left: 40px;
+  margin-top: 20px;
+}
+
+.text-left h4 {
+  font-size: 165%;
+}
+
+.text-left h1 {
+  font-size: 500%;
+}
+
+#contact .btn {
+  background: linear-gradient(270deg, #8c32f0 0%, #e73587 100%);
+}
+
+footer {
+  background: #020E35;
+}
