@@ -11,14 +11,46 @@
     <link rel="stylesheet" href="asset/css/style.css" />
   </head>
   <body>
+    
     <!-- Section A (Navbar & Hero Section) -->
-    <nav></nav>
-    <section id="hero">
-      <div class="container">
-        <div class="row">
-          <div class="col-12"></div>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="asset/img/Combined Shape.png" alt="Logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button> 
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav" style=" margin-left: 51%; ">
+              <li class="nav-item" >
+                <a class="nav-link active " style="color: black;" aria-current="page" href="#">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" style="color: black;" href="#">ABOUT</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" style="color: black;" href="#">SERVICES</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link"  style="color: black;"href="#">PORTOFOLIO</a>
+              </li><li class="nav-item">
+                <a class="nav-link"  style="color: black;"href="#">CONTACT US</a>
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
+     </nav>
+  
+    <section id="hero">
+        <div class="container">
+            <div class="row">
+                <div  class="col-12">
+                    <h1 style="">We Create <br>Content that<br> ranks</h1>
+                    <button  class="btn btn-custom ">Read More</button>
+                    <img src="asset/img/Group.svg" alt="">
+                </div>
+            </div>
+        </div>
     </section>
     <!-- End Section A -->
 
@@ -158,13 +190,95 @@
 
     <!-- Section D (Contact & Footer) -->
     <section id="contact">
-      <div class="container">
-        <div class="row">
-          <div class="col-12"></div>
+      <div class="container-fluid px-5 my-5">
+        <div class="row justify-content-center">
+          <div class="col-xl-10">
+            <div class="card border-0 rounded-3 shadow-lg overflow-hidden">
+              <div class="card-body p-0">
+                <div class="row g-0">
+                  <div class="col-sm-6">
+                    <div class="text-left">
+                        <h4>Questions, Comments, Concerns?</h4>
+                        <h1>We'd love to <br><span style="color:#E73587">hear</span> from you!</h1>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 p-4">
+                    <form id="contactForm">
+                      <!-- Name Input -->
+                      <div class="form-floating mb-3">
+                        <input
+                          class="form-control"
+                          id="name"
+                          type="text"
+                          placeholder="Name"
+                        />
+                        <label for="name">Name</label>
+                      </div>
+
+                      <!-- Email Input -->
+                      <div class="form-floating mb-3">
+                        <input
+                          class="form-control"
+                          id="emailAddress"
+                          type="email"
+                          placeholder="Email Address"
+                        />
+                        <label for="emailAddress">Email Address</label>
+                        <div
+                          class="invalid-feedback"
+                          data-sb-feedback="emailAddress:required"
+                        >
+                          Email Address is required.
+                        </div>
+                      </div>
+
+                      <!-- Message Input -->
+                      <div class="form-floating mb-3">
+                        <textarea
+                          class="form-control"
+                          id="message"
+                          type="text"
+                          placeholder="Message"
+                          style="height: 10rem"
+                          data-sb-validations="required"
+                        ></textarea>
+                        <label for="message">Message</label>
+                        <div
+                          class="invalid-feedback"
+                          data-sb-feedback="message:required"
+                        >
+                          Message is required.
+                        </div>
+                      </div>
+
+                      <!-- Submit button -->
+                      <div class="d-grid">
+                        <button
+                          class="btn btn-lg text-white"
+                          id="submitButton"
+                          type="submit"
+                        >
+                          Send A Message
+                        </button>
+                      </div>
+                    </form>
+                    <!-- End of contact form -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
-    <footer>jskvhahsjasvgah</footer>
+    <footer class="text-left text-white">
+      <!-- Copyright -->
+      <div class="text-left">
+        2020 © Apa aja dah bagus</a
+        >
+      </div>
+      <!-- Copyright -->
+    </footer>
     <!-- End Section D -->
 
     <!-- JAVASCRIPT -->
