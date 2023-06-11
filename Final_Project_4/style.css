@@ -1,0 +1,40 @@
+#ramalan-cuaca{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background: radial-gradient(circle, rgba(174,233,238,1) 0%, rgba(82,155,255,1) 100%);
+}
+#ramalan-cuaca .bola-1, 
+#ramalan-cuaca .bola-2,
+#ramalan-cuaca .bola-3{
+    position: absolute;
+    opacity: 0.5;
+}
+#ramalan-cuaca .bola-1{
+    width: 700px;
+    height: 700px;
+    background: linear-gradient(145deg, rgba(47,35,255,1) 0%, rgba(74,74,250,1) 17%, rgba(0,212,255,1) 100%);
+    left: -83px;
+    top: -290px;
+} 
+#ramalan-cuaca .bola-2{
+    width: 400px;
+    height: 400px;
+    background: linear-gradient(30deg, rgba(47,35,255,1) 0%, rgba(74,74,250,1) 17%, rgba(0,212,255,1) 100%);
+    right: 99px;
+    bottom: 0px;
+}
+#ramalan-cuaca .kotak{
+    position: absolute;
+    min-width: 520px;
+    width: 51vw;
+    border:3px solid white;
+    border-radius: 10px;
+    background: linear-gradient(116.62deg, rgba(255, 255, 255, 0.3) -9.05%, rgba(255, 255, 255, 0.06) 100%);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.4);
+}
+#ramalan-cuaca .kotak .time{
+    font-size: 22px;
+}
