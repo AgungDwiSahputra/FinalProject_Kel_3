@@ -19,7 +19,7 @@ fetch(url, {
   .then(response => response.json())
   .then(result => {
     console.log(result);
-
+    var humidityImg = document.querySelector(".list-kelembapan img");  //Variable untuk megambil id img cuaca
     const cityName = document.getElementById('cityName');
     cityName.innerHTML = city ;
     
@@ -43,10 +43,43 @@ fetch(url, {
 
     const windDegrees = document.getElementById('windDegreesData');
     windDegrees.innerHTML = JSON.stringify(result.wind_degrees);
+
+    // Kondisi Keadaan Cuaca
+    if (result.humidity >= 80 && result.temp < 15) {
+      weatherType = "Kabut";
+      humidityImg.src = "icon/low-humidity.png";
+    } else if (result.humidity >= 80 && result.temp >= 15) {
+      weatherType = "Mendung";
+      humidityImg.src ="icon/storm.png";
+    } else if (result.wind_speed > 2 && result.wind_degrees >= 90 && result.wind_degrees <= 270) {
+      weatherType = "Berawan";
+      humidityImg.src ="icon/sun-cloud.png";
+    } else if (result.wind_speed > 2 && result.wind_degrees >= 0 && result.wind_degrees < 90) {
+      weatherType = "Cerah";
+      humidityImg.src ="icon/sun.png";
+    } else if (result.wind_speed > 2 && result.wind_degrees > 270 && result.wind_degrees <= 360) {
+      weatherType = "Petir dan Hujan";
+      humidityImg.src ="icon/storm.png";
+    } else if (result.wind_speed <= 2 && result.temp >= 25 && result.temp <= 35) {
+      weatherType = "Hujan Ringan";
+      humidityImg.src ="icon/rain.png";
+    } else if (result.wind_speed <= 2 && (result.temp > 35 || result.temp < 25)) {
+      weatherType = "Cerah";
+      humidityImg.src ="icon/sun.png";
+    } else {
+      weatherType = "Tidak Diketahui";
+      humidityImg.src ="icon/sun.png";
+    }
+    
+    console.log(weatherType)
+    tipeCuaca.innerHTML=weatherType;
+    
+
   })
   .catch(error => {
     console.error('Error: ', error);
   });
+
 
   fetch(worldTimeApiUrl, {
     method: 'GET',
@@ -85,4 +118,3 @@ fetch(url, {
 }
 
   window.onload = updateData;
-  

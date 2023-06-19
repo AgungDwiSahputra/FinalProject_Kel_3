@@ -38,3 +38,7 @@
 #ramalan-cuaca .kotak .time{
     font-size: 22px;
 }
+
+.idcuaca{
+    justify-content: space-around;
+}
