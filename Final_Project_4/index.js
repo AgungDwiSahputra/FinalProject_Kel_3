@@ -1,21 +1,21 @@
 var city = 'Jakarta' ;
 var apiKey = 'PkYGOd4D7TO5kJSVz8JiOg==4C1H3mqEqlvplnbW';
 
+// Fungsi untuk Data
 function updateData(){
   var cityData = document.getElementById('cityData').value;
   if (cityData != ""){
     city = cityData;
   }
-  var worldTimeApiUrl = 'https://api.api-ninjas.com/v1/worldtime?city=' + city;
   var url = 'https://api.api-ninjas.com/v1/weather?city=' + city;
 
-fetch(url, {
-  method: 'GET',
-  headers: {
-    'X-Api-Key': apiKey,
-    'Content-Type': 'application/json'
-  }
-})
+  fetch(url, {
+    method: 'GET',
+    headers: {
+      'X-Api-Key': apiKey,
+      'Content-Type': 'application/json'
+    }
+  })
   .then(response => response.json())
   .then(result => {
     console.log(result);
@@ -70,17 +70,19 @@ fetch(url, {
       weatherType = "Tidak Diketahui";
       humidityImg.src ="icon/sun.png";
     }
-    
-    console.log(weatherType)
+    // console.log(weatherType)
     tipeCuaca.innerHTML=weatherType;
-    
-
   })
   .catch(error => {
     console.error('Error: ', error);
   });
 
+  setTimeout(updateData, 10000);
+}
 
+// Fungsi Time
+function displayTime(city) {
+  var worldTimeApiUrl = 'https://api.api-ninjas.com/v1/worldtime?city=' + city;
   fetch(worldTimeApiUrl, {
     method: 'GET',
     headers: {
@@ -91,30 +93,26 @@ fetch(url, {
   .then(response => response.json())
   .then(timeResult => {
     console.log(timeResult);
-
-   
     const currentTime = new Date(timeResult.datetime);
     var hours = currentTime.getHours();
     var minutes = currentTime.getMinutes();
     var seconds = currentTime.getSeconds();
 
-  
     hours = ("0" + hours).slice(-2);
     minutes = ("0" + minutes).slice(-2);
     seconds = ("0" + seconds).slice(-2);
 
     const timeString = hours + ":" + minutes + ":" + seconds;
-
-   
     const timeElement = document.getElementById("time");
-    timeElement.innerHTML = timeString;
-    setTimeout(updateData, 10000);
-   
+    timeElement.innerHTML = timeString;   
   })
   .catch(error => {
     console.error('Error: ', error);
   });
-  
-}
 
-  window.onload = updateData;
+}
+setInterval(() => {
+  displayTime(city);
+}, 1000);
+
+window.onload = updateData;
