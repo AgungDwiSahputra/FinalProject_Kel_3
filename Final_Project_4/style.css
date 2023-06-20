@@ -32,7 +32,8 @@
 }
 #ramalan-cuaca .kotak{
     position: absolute;
-    min-width: 520px;
+    min-width: 800px;
+    max-width: 1000px;
     width: 51vw;
     border:3px solid white;
     border-radius: 10px;
