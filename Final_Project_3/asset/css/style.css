@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Basic&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Basic&display=swap');
 
 * {
   font-family: "Basic", sans-serif;
@@ -59,14 +59,20 @@ margin-bottom: 40px;
 .navbar-nav li a{
     font-size: 13px;
     margin-left: 10px;
+    padding: 5px 20px;
 }
 
 .navbar-nav li a:hover{
     background: linear-gradient(270deg, #8C32F0 0%, #E73587 100%);
+    color: #ffffff;
     border-radius: 15px;
 }
-
+.navbar-nav .nav-link.active{
+  color: #ffffff;
+}
+  
 .navbar-nav li a.active{
+    color: #ffffff;
     background: linear-gradient(270deg, #8C32F0 0%, #E73587 100%);
     border-radius: 15px;
 }
@@ -188,6 +194,14 @@ margin-bottom: 40px;
 }
 
 /* Section C */
+#ourwork {
+  margin-top: -50vh;
+  background-color: #020e35; 
+  color: white;
+}
+#ourwork .container{
+  padding: 55vh 0 80px;
+}
 #ourwork .btn {
   background: linear-gradient(270deg, #8c32f0 0%, #e73587 100%);
 }
